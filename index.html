@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COFFEE CAFE 24</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 네비바 -->
+  <div class="nav-bar">
+    <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+    <ul>
+      <li class="nav-item"><a href="index.html">Store</a></li>
+      <li class="nav-item"><a href="index.html">AI</a></li>
+      <li class="nav-item"><a href="index.html">PC</a></li>
+      <li class="nav-item"><a href="index.html">Mobile</a></li>
+      <li class="nav-item"><a href="index.html">TV & Home</a></li>
+      <li class="nav-item"><a href="index.html">Support</a></li>
+    </ul>
+    <div class="notification-button">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#4b4948" stroke-width="2">
+        <path d="M9.96706 18.2001V19.9334C9.96706 21.6087 11.3251 22.9668 13.0004 22.9668C14.6757 22.9668 16.0337 21.6087 16.0337 19.9334V18.2001M6.69736 8.90313C6.69736 5.42206 9.51932 2.6001 13.0004 2.6001C16.4815 2.6001 19.3034 5.42206 19.3034 8.90313V13.0001L22.1004 15.6001V18.6334H3.90039V15.6001L6.69736 13.0001V8.90313Z"></path>
+      </svg>
+    </div>
+    
+    <div class="search-button">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#4b4948" stroke-width="2">
+        <circle cx="11" cy="11" r="8" ></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </div>
+
+    <div class="hamburger-button">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#4b4948" stroke-width="2">
+        <line class="line1" x1="4" y1="8" x2="20" y2="8" />
+        <line class="line2" x1="4" y1="16" x2="20" y2="16" />
+      </svg>
+    </div>
+  </div>
+    <!-- Modal popup -->
+    <div class="modal" id="search-modal">
+      <div class="modal-content">
+          <input type="search" id="search-input" placeholder="검색어를 입력하세요" autofocus>
+          <button id="search-button">검색</button>
+          <div id="search-results"></div>
+      </div>
+  </div>
+  
+<!-- 슬라이드 이미지 -->
+<div class="slide-container">
+    <div class="slide">
+      <img src="img/image1.jpg" alt="슬라이드 이미지 1">
+    </div>
+    <div class="slide">
+      <img src="img/image2.jpg" alt="슬라이드 이미지 2">
+    </div>
+    <div class="slide">
+      <img src="img/image3.jpg" alt="슬라이드 이미지 3">
+    </div>
+    <button class="prev-btn">
+        <svg viewBox="0 0 24 24">
+          <path d="M15.41 16.59L14 18l-6-6 6-6 1.41 1.41L10.83 12z"></path>
+        </svg>
+      </button>
+      <button class="next-btn">
+        <svg viewBox="0 0 24 24">
+          <path d="M8.59 7.41L10 6l6 6-6 6-1.41-1.41L13.17 12z"></path>
+        </svg>
+      </button>
+  </div>
+  
+  <!-- 메뉴 -->
+  <div id="menu-container">
+    <h2><img src="img/menu.png" alt="menu"></h2>
+    <ul>
+      <li><img src="img/menu1.png" alt="menu1"><span>Menu 1</span></li>
+      <li><img src="img/menu2.png" alt="menu2"><span>Menu 2</span></li>
+      <li><img src="img/menu3.png" alt="menu3"><span>Menu 3</span></li>
+      <li><img src="img/menu4.jpg" alt="menu4"><span>Menu 4</span></li>
+      <li><img src="img/menu5.jpg" alt="menu5"><span>Menu 5</span></li>
+      <li><img src="img/menu6.jpg" alt="menu6"><span>Menu 6</span></li>
+    </ul>
+  </div>
+  
+<!-- 이벤트 -->
+<div id="event-container">
+    <h2><img src="img/event.png" alt="event"></h2>
+  
+    <ul>
+      <li><img src="img/event1.jpg" alt="event1"><span>Event 1</span></li>
+      <li><img src="img/event2.png" alt="event2"><span>Event 2</span></li>
+      <li><img src="img/event3.jpg" alt="event3"><span>Event 3</span></li>
+      <li><img src="img/event4.png" alt="event4"><span>Event 4</span></li>
+      <li><img src="img/event5.jpg" alt="event5"><span>Event 5</span></li>
+      <li><img src="img/event6.jpg" alt="event6"><span>Event 6</span></li>
+    </ul>
+  
+  </div>
+  
+  <!-- 카피라이트 -->
+  <div class="copyright-container">
+    <p>&copy; COFFEE CAFE 24</p>
+    <p>design by Hyunwoo</p>
+    <p>images from pixabay</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
